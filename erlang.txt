@@ -1,0 +1,17 @@
+erlang学习笔记网址：http://www.tuicool.com/articles/ZNzuyu
+erlang学习网址：http://www.erlang-cn.com/category/erlang-start
+
+~f   浮点数 P为输出该浮点数小数点后位数，不足时用0填充
+~s   字符串 P为截取Data的长度
+~w   Erlang term 
+~p   与~w类似，不过当多行时将自动换行
+~W   比~w多一个参数，表示打印深度，Term深度超过该参数时，打印时用...代替表示
+~n   换行符
+~B   输出格式基于2...36进制，将P作为进制，默认为10进制 
+  eg.  io:fwrite("~.16B~n", [31]). 输出31的16进制格式
+~X   输出格式基于2...36进制的数字，2个参数，第一个是要输出的Data，第二个是在输出的数字之前带上的参数。
+如： io:fwrite("~.16X~n", [31,"10#"]).    10#31  ok.
+~b 类似与~B，输出小写字母
+~x 类似与~X，输出小写字母
+~+  类似与~#，输出小写字母
+http协议详解：http://www.cnblogs.com/li0803/archive/2008/11/03/1324746.html

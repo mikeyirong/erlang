@@ -1,0 +1,29 @@
+erlang中的异常捕获怎么使用？
+
+erlang中有哪些有用的模块，分别怎么使用？
+
+erlang中怎么调试代码？
+
+erlang网址:http://erlang.org/doc/apps/odbc/getting_started.html
+
+erlang 闭包,返回fun的函数
+1.Fruit=[apple,pear,oranger]
+2.MakeTest=fun(L) -> (fun(X) ->lists:member(X,L) end) end.
+3.IsFruit=MakeTest(Fruit).
+
+erlang 中的列表推导
+把列表每一项中的数字加倍
+1.Buy=[{oranges,4},{newspaper,1},{apples,10},{pears,6},{milk,3}]
+2.[{Name,2*Number}||{Name,Number} <- Buy]
+
+
+erlang 中的记录(record)与映射组（map）
+如何定义记录
+文件后缀名（.hrl）模块record
+
+如何创建记录的实例
+read records
+
+如何提取字段
+1---使用模式匹配
+2---#records.字段名
